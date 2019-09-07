@@ -5,13 +5,22 @@
 
 class Image extends React.Component {
 
+  state = {
+    img: "",
+  }
+
 
   chooseImage = () => {
-    if this.props.type = 
+    if (this.props.type === "real") {
+
+    }
+    elsif (this.props.type === "fake") {
+      
+    }
   };
 
   handleClick = () => {
-    
+    this.chooseImage();
   };
 
 
@@ -19,7 +28,7 @@ class Image extends React.Component {
     return (
       <div className="Image">
 
-        <img src={chooseImage()} />
+        <img src={img} />
 
       </div>
     );
