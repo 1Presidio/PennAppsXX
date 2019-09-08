@@ -8,8 +8,14 @@ import './App.css';
 class App extends React.Component {
 
   state = {
-    order: 0,
+    order: false,
     result: "",
+    img1: "",
+    img2: "",
+  };
+
+  componentDidMount = () => {
+    this.chooseImage();
   };
 
   chooseOrder = () => {
@@ -25,9 +31,20 @@ class App extends React.Component {
     }
   };
 
+  chooseImage = () => {
+    let numReal = Math.floor(Math.random() * 103) + 7;
+    let numFake = Math.floor(Math.random() * 250);
+    if (this.state.order) {
+      this.setState({img1: "./real_images/res" + String(numReal)+ ".png", img2: "./fake_images/res" + String(numFake)+ ".jpg"});
+    }
+    else {
+      this.setState({img1: "./fake_images/res" + String(numFake)+ ".jpg", img2: "./real_images/res" + String(numReal)+ ".png"});
+    }
+  };
+
   reset = () => {
     this.chooseOrder();
-
+    this.chooseImage();
   };
 
 
@@ -40,8 +57,8 @@ class App extends React.Component {
             {this.state.result}
           </p>
           
-          <Image type={this.state.order ? "fake" : "real"} displayResult={this.displayResult} reset={this.reset}></Image>
-          <Image type={this.state.order ? "real" : "fake"} displayResult={this.displayResult} reset={this.reset}></Image>
+          <Image img={this.state.img1} displayResult={this.displayResult} reset={this.reset}></Image>
+          <Image img={this.state.img2} displayResult={this.displayResult} reset={this.reset}></Image>
 
 
           <p>
