@@ -5,7 +5,7 @@ class Image extends React.Component {
 
   
   handleClick = () => {
-    this.props.displayResult(this.props.type === "fake");
+    this.props.displayResult(this.props.num);
     this.props.reset();
   };
 

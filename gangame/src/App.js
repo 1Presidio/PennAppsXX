@@ -22,8 +22,8 @@ class App extends React.Component {
     this.setState({order: Math.random() > 0.5});
   };
 
-  displayResult = (right) => {
-    if (right) {
+  displayResult = (num) => {
+    if (num == this.state.order) {
       this.setState({result: "Correct!"});
     }
     else {
@@ -57,15 +57,13 @@ class App extends React.Component {
             {this.state.result}
           </p>
           
-          <Image img={this.state.img1} displayResult={this.displayResult} reset={this.reset}></Image>
-          <Image img={this.state.img2} displayResult={this.displayResult} reset={this.reset}></Image>
-
+          <Image img={this.state.img1} num="0" displayResult={this.displayResult} reset={this.reset}></Image>
+          <Image img={this.state.img2} num="1" displayResult={this.displayResult} reset={this.reset}></Image>
 
           <p>
             Which one is the <b>fake</b> person?
           </p>
           
-  
         </header>
       </div>
     );
