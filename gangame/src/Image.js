@@ -21,7 +21,6 @@ class Image extends React.Component {
 
   handleClick = () => {
     this.props.displayResult(this.props.type === "fake");
-    this.chooseImage();
     this.props.reset();
     console.log("hey");
   };
