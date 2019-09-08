@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/PennAppsApps/static/css/main.b311dd2c.chunk.css",
-    "main.js": "/PennAppsApps/static/js/main.948cbd86.chunk.js",
-    "main.js.map": "/PennAppsApps/static/js/main.948cbd86.chunk.js.map",
-    "runtime~main.js": "/PennAppsApps/static/js/runtime~main.910c1851.js",
-    "runtime~main.js.map": "/PennAppsApps/static/js/runtime~main.910c1851.js.map",
-    "static/js/2.c427fc7e.chunk.js": "/PennAppsApps/static/js/2.c427fc7e.chunk.js",
-    "static/js/2.c427fc7e.chunk.js.map": "/PennAppsApps/static/js/2.c427fc7e.chunk.js.map",
-    "index.html": "/PennAppsApps/index.html",
-    "precache-manifest.7080929fc6c4ff4f5d9ea8d7cfde5303.js": "/PennAppsApps/precache-manifest.7080929fc6c4ff4f5d9ea8d7cfde5303.js",
-    "service-worker.js": "/PennAppsApps/service-worker.js",
-    "static/css/main.b311dd2c.chunk.css.map": "/PennAppsApps/static/css/main.b311dd2c.chunk.css.map"
+    "main.css": "/PennAppsXX/static/css/main.b311dd2c.chunk.css",
+    "main.js": "/PennAppsXX/static/js/main.ece4d7f6.chunk.js",
+    "main.js.map": "/PennAppsXX/static/js/main.ece4d7f6.chunk.js.map",
+    "runtime~main.js": "/PennAppsXX/static/js/runtime~main.b424a60a.js",
+    "runtime~main.js.map": "/PennAppsXX/static/js/runtime~main.b424a60a.js.map",
+    "static/js/2.c427fc7e.chunk.js": "/PennAppsXX/static/js/2.c427fc7e.chunk.js",
+    "static/js/2.c427fc7e.chunk.js.map": "/PennAppsXX/static/js/2.c427fc7e.chunk.js.map",
+    "index.html": "/PennAppsXX/index.html",
+    "precache-manifest.91a19dd460fed5c6ef7323880ff8bac2.js": "/PennAppsXX/precache-manifest.91a19dd460fed5c6ef7323880ff8bac2.js",
+    "service-worker.js": "/PennAppsXX/service-worker.js",
+    "static/css/main.b311dd2c.chunk.css.map": "/PennAppsXX/static/css/main.b311dd2c.chunk.css.map"
   }
 }
