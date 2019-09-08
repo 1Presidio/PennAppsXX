@@ -25,6 +25,11 @@ class App extends React.Component {
     }
   };
 
+  reset = () => {
+    this.chooseOrder();
+
+  };
+
 
   render () {
     return (
@@ -35,8 +40,8 @@ class App extends React.Component {
             {this.state.result}
           </p>
           
-          <Image type={this.state.order ? "fake" : "real"} displayResult={this.displayResult}></Image>
-          <Image type={this.state.order ? "real" : "fake"} displayResult={this.displayResult}></Image>
+          <Image type={this.state.order ? "fake" : "real"} displayResult={this.displayResult} reset={this.reset}></Image>
+          <Image type={this.state.order ? "real" : "fake"} displayResult={this.displayResult} reset={this.reset}></Image>
 
 
           <p>
