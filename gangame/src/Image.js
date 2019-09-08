@@ -10,10 +10,11 @@ class Image extends React.Component {
 
   chooseImage = () => {
     if (this.props.type === "real") {
-
+      
     }
     else if (this.props.type === "fake") {
-
+      let num = Math.floor(Math.random() * 250);
+      this.setState({img: "res" + String(num)+ ".jpg"});
     }
   };
 
