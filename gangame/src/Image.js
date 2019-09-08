@@ -1,6 +1,4 @@
-
-
-
+import React from 'react';
 
 
 class Image extends React.Component {
@@ -14,23 +12,20 @@ class Image extends React.Component {
     if (this.props.type === "real") {
 
     }
-    elsif (this.props.type === "fake") {
-      
+    else if (this.props.type === "fake") {
+
     }
   };
 
   handleClick = () => {
+    this.props.displayResult(this.props.type === "fake");
     this.chooseImage();
   };
 
 
   render() {
     return (
-      <div className="Image">
-
-        <img src={img} />
-
-      </div>
+      <img src={this.state.img} onClick={this.handleClick} />
     );
   }
   }
