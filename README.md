@@ -1,5 +1,5 @@
-# PennApps19
-This project was for PennApps19. It is inspired by StyleGan from Nvidia Labs. [https://pennapps.com/]
+# PennAppsXX
+This project was for PennAppsXX. It is inspired by StyleGan from Nvidia Labs. [https://pennapps.com/]
 
 ## The GAN Game
 
